@@ -1,4 +1,5 @@
 # This code is the starting point for data manipulation
+#Thomas Tran
 import pandas as pd
 import json
 from pandas.io.json import json_normalize
