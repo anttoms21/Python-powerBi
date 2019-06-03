@@ -4,6 +4,8 @@ import json
 from pandas.io.json import json_normalize
 #time script
 from datetime import datetime
+import os
+from pathlib import Path
 startTime = datetime.now()
 
 
@@ -37,7 +39,7 @@ main_table.drop(indexNames, inplace=True)
 print("Dropped buildings that are not needed from main_table")
 print(datetime.now() - startTime)
 
-main_table.to_pickle("./simulations.pickle'")
+main_table.to_pickle("./simulations.pickle")
 print("Saved Normalized main_table to pickle")
 print(datetime.now() - startTime)
 # saved to pickle... if we wish to debug.. we can load the pickle file much faster than doing the above
